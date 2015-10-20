@@ -1,0 +1,23 @@
+ <div class="MainWrapper" ng-controller="HomeController">
+
+<div id="SidemenuContainer"  ng-model="leftMargin" ng-style="{'margin-left': leftMargin}" ng-include="'templates/sidemenu.html'"></div>
+
+<div class="Wrapper" ng-model="blur"  ng-style="{'-webkit-filter':blur}">
+	
+    <header>
+		<div class="MenuBtnWrapper"  ng-click="mainMenuClick()">
+			<div class="mainMenu"></div>
+		</div>
+		<div class="headerTitle">
+			<div class="headerTitle_c1">
+				Crystal Waters 
+			</div>
+		</div>
+		<div class="headerRight"  ng-click="headerContentClick()"></div>
+	</header>
+   
+	<div class="contentWrapper" ng-click="headerContentClick()" ng-include="templetePath">
+    </div>
+ </div>
+     
+     </div>

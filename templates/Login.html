@@ -1,0 +1,24 @@
+<div id="LoginWrapper" ng-controller="LoginController">
+<div id="LoginForm">
+<h1 class="LoginHeader">Login Page</h1>
+<form>
+	<table class="LoginTable">
+		<tr>
+			<td><label>User name</label></td><td><input type="text" ng-model="username" placeholder="1234"></td>
+		</tr>
+		<tr>
+			<td><label>Password</label></td><td><input type="password" ng-model="password" placeholder="1234"></td>
+		</tr>
+		<tr>
+			<td><label>DOB</label></td><td><input id="datepicker" type="text" ng-model="dob"  maxlength="8" placeholder="0060"></td>
+		</tr>
+	</table>
+ <div class="ErrorDiv">
+ 	<span class="ErrorSpan"> {{loginError}}</span>
+ </div>
+  
+  <button class="btn btn-success" ng-click="LoginSubmit(username, password,dob)">Submit</button>
+  <!--<button class="btn btn-warning" ng-click="cancel()">Cancel</button>-->
+</form>
+</div>
+</div>

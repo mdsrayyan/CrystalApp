@@ -1,0 +1,346 @@
+ html
+ {
+ 	margin:0px;
+ 	padding:0px;
+ 	height:100%;
+ 	width:100%;
+ }
+ body
+ {
+   background: #404040;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  width: 100%;
+     height:100%;
+ }
+ ::-webkit-scrollbar { 
+    display: none; 
+}
+  #LoginForm{
+    width: 320px;
+  height: 250px;
+  margin: 0px auto;
+  padding: 3%;
+     background: rgba(255, 255, 255, 0.25);
+  }
+#LoginWrapper
+{
+  padding-top: 120px;
+}
+    #LoginForm form
+  {
+    height: 85%;
+  }
+  .LoginHeader
+  {
+  	text-align: center;
+  	  margin: 0px;
+  	    height: 15%;
+  }
+.LoginForm,.btn.btn-success,.LoginTable
+{
+	  margin: 0px auto;
+}
+.LoginTable tr td input
+{
+	  width: 94%;
+  padding: 0 0 0 6%;
+  /* margin: 0; */
+  border: 0;
+  height: 70%;
+  /*box-shadow: inset 0px 0px 5px black;*/
+}
+.LoginTable
+{
+	height: 70%;
+  width: 100%;
+}
+.btn.btn-success
+{
+  float: right;
+  height: 10%;
+  width: 20%;
+  margin-top: 5%;
+    border: 0;
+}
+.LoginTable tr
+{
+	width:100%;
+	height:30px;
+}
+.LoginTable tr td
+{
+	width:50%;
+}
+.ErrorDiv
+{
+	width:100%;
+	height:15%;
+}
+.ErrorSpan
+{
+	  display: block;
+  height: 70%;
+  vertical-align: middle;
+  width: 100%;
+  color: rgb(255, 0, 0);
+  opacity: 0.7;
+}
+#SidemenuContainer
+{
+ position: absolute;
+  top: 0;
+  height: 100%;
+  width: 40%;
+    background: rgba(255, 255, 255, 0.50);
+     margin-left: -100%;
+    -webkit-transition: margin-left 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: margin-left 0.3s;
+    max-width: 300px;
+  min-width: 240px;
+    z-index: 2;
+}
+.sidemenu .sidemenu-list li
+{
+ list-style-type: none;
+  font-size:large;
+      padding: 3% 0 3% 0%;
+}
+.settings,.logout,.sidemenuButton
+{
+    width: 15%;
+  height: 100%;
+  display: inline-block;
+    float: right;
+}
+.settings
+{
+  background-image: url("../images/Axis_0003_settings.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 40%;
+  width: 25%;
+}
+.logout
+{
+ float:left;   
+}
+.sidemenu,.sidemenuSection,.sidemenu-header,.setting-logout,.MainWrapper,.fillFormDiv,.DetailsForDiv,.formWrapper,.DailyDetailsWrapper
+{
+ width:100%;
+    height:100%;
+}  
+.masterSection
+{
+ overflow: auto;
+    height:90%;
+    box-shadow: inset 0 20px 8px -17px rgba(0, 0, 0, 0.72);
+}
+.sidemenu-header
+{
+  height: 10%;
+  margin-bottom: 0px;   
+    background: rgba(0, 0, 0, 0.09);
+}
+.sidemenu-list
+{
+     height: 80%;
+  padding-left: 20px;
+  margin: 0;
+  padding-top: 20%;
+}
+.sidemenu-list h4
+{
+    font-size: x-large;
+    margin: 0;
+    padding-bottom: 10%;
+}
+.sidemenu-quickList
+{
+    height: 80%;
+  margin-top: 0;
+}
+.LogoutDiv
+{
+ width;100%;
+    height:10%;
+  text-align: center;
+}
+#Logout
+{
+   margin: 0px auto;
+  width: 30%;
+  height: 50%;   
+      border: 0px;
+      background: white;
+}
+.mainMenu
+{
+  background-image: url("../images/main_menu.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 40%;
+      
+}
+header
+{
+   width: 100%;
+  height: 10%;  
+  background: rgba(0, 0, 0, 0.10);
+  color: white;
+}
+.MenuBtnWrapper
+{
+      width: 10%;
+  height: 100%;
+  display: inline-block;
+}
+.headerTitle
+{
+ display: inline-block;
+  width: 90%;
+  float: right;
+  height: 100%;
+  text-align: center;   
+}
+.headerTitle_c1
+{
+ font-size: xx-large;
+    padding-top: 15px;  
+}
+.Wrapper
+{
+   width: 100%;
+  height: 100%;  
+  background-image: url("../images/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+      background: #404040;
+}
+.contentWrapper
+{
+ width:100%;
+    height:90%;
+}
+.sidemenuButton
+{
+     background-image: url("../images/main_menu.png");
+    float: left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 40%;
+  width: 25%;
+}
+.formWrapper
+{
+      width: 100%;
+  height: 100%;
+}
+.FormMaster
+{
+     width: 40%;
+  height: 100%;
+  display: inline-block;
+  /* border-right: 3px solid rgba(255, 255, 255, 0.19); */
+  background: rgba(255, 255, 255, 0.0);
+    overflow: hidden;
+}
+.FormDetails
+{
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  float: right;
+    box-shadow: inset 20px 0px 8px -17px rgba(0, 0, 0, 0.72);
+    background: rgba(255, 255, 255, 0.06);
+}
+.leftDetails,.rightDetails
+{
+    width:50%;
+    height:100%;
+    float:left;
+    color: rgba(245, 245, 245, 0.6);
+}
+.rightDetails
+{
+    float:right;
+}
+.detailsDiv
+{
+ width:100%;
+    height:90%;
+}
+.formList
+{
+ width:90%;
+    height:30px;
+      margin: 0 auto;
+  padding: 15px 0px;
+}
+.formList input
+{
+  width: 96%;
+  padding: 0 0 0 4%;
+  margin: 0;
+  border: 0;
+  height: 100%;
+}
+.DetailsSubmit
+{
+   width: 30%;
+  height: 50%;
+  border: 0;   
+}
+.masterUl
+{
+   margin: 0;
+  padding: 0;
+  width: 100%;   
+}
+.masterUl li
+{
+     padding: 5% 8% 5% 8%;
+  list-style-position: inside;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+      color: rgba(207, 111, 53, 1);
+}
+/*
+.masterUl li .leftSpan,.masterUl li .rightSpan
+{
+ display:inline-block;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+*/
+.masterUl li .rightSpan
+{
+ float:right;   
+}
+.masterUl.listHeader
+{
+ background: rgba(0, 0, 0, 0.35);
+  border-bottom: 0;   
+}
+.masterUl.listHeader li
+{
+ list-style-type: none;   
+}
+.listHeaderDiv
+{
+ height: 10%;   
+}
+.listHeaderDiv ul
+{
+  height: 100%;
+}
+.listHeaderDiv ul li
+{
+ border-bottom: 0;
+}
+.DetailsForDiv .detailsDiv .rightDetails 
+{
+ text-align: right;
+}

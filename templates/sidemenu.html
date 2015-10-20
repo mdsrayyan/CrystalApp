@@ -1,0 +1,42 @@
+<div class="sidemenu">
+
+	<section class="sidemenuSection">
+		<div class="sidemenu-header">
+			<div class="setting-logout">
+                <span class="sidemenuButton"  ng-click="headerContentClick()"></span>
+				<span class="settings"></span>
+			</div>
+		</div>
+
+		<div class="sidemenu-quickList">
+            <ul class="sidemenu-list">
+				<h4>Quick Links</h4>
+				<li ng-click="routeToThis('/landing')">
+					Home
+				</li>
+				<li ng-click="routeToThis('/WatchList1')">
+					Customers List
+				</li>
+				<li ng-click="routeToThis('/DailyDetails')">
+					Daily Sheet
+				</li>
+				<li ng-click="routeToThis('/searchEquity','Stock Details')">
+					Monthly Sheet
+				</li>
+                <li>
+                    Widgets
+                </li>
+				<li ng-click="routeToThis('/TopGainersAndLosers')">
+					About Crystal
+				</li>
+                <li ng-click="clearLocalStorage()">
+					Reset Data
+				</li>
+			</ul>
+			
+		</div>
+        <div class="LogoutDiv">
+        <button id="Logout" ng-click="Logoutclicked()">Logout</button>
+        </div>
+	</section>
+</div>

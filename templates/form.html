@@ -1,0 +1,78 @@
+<div class="formWrapper" ng-controller="FormCtrl">
+<div class="FormMaster">
+    <div class="listHeaderDiv">
+    <ul  class="masterUl listHeader">
+     <li>
+          <div>
+              <span class="leftSpan">NAME</span>
+                <span class="rightSpan">PRICE</span>
+            </div>
+    </li>
+     </ul>
+    </div>
+ <div class="masterSection">
+     
+        <ol id="todo-list" class="masterUl">
+          <li ng-repeat="todo in todos track by $index" ng-click="customerDetails($index)">
+            <div class="view" ng-keyup="editTodo()">
+<!--              <input type="checkbox" ng-model="todo.done"/>-->
+              <span class="leftSpan">{{todo.custname}}</span>
+                <span class="rightSpan">{{todo.price}}</span>
+            </div>
+<!--
+            <input class="edit" type="text" ng-model="todo.text"
+              ng-keyup="editOnEnter(todo)"/>
+-->
+          </li>
+        </ol>
+    </div>
+    </div>
+    <div class="FormDetails">
+        <div class="fillFormDiv" ng-show="fillFormDivDisplay"> 
+            <div class="detailsDiv" >
+              <div class="formList">
+                    <div class="leftDetails">Customer Name</div>
+                    <div class="rightDetails"><input type="text" ng-model="custname"  size="30"
+                placeholder="Name"/></div>
+               </div>
+                <div class="formList">
+                    <div class="leftDetails">Quantity</div>
+                    <div class="rightDetails"><input type="text" ng-model="quantity"  size="2"
+                placeholder="Select quantity"/></div>
+                </div>
+                <div class="formList">
+                    <div class="leftDetails">Price</div>
+                    <div class="rightDetails"><input  type="text" ng-model="price"  size="30"
+                placeholder="Amount"/></div>
+               </div>
+            </div>
+            <div class="LogoutDiv">
+                <button ng-click="addTodo()" class="DetailsSubmit">Submit</button>
+            </div>
+        </div>
+        <div class="DetailsForDiv" ng-show="DetailsForDivDisplay">
+             <div class="detailsDiv" >
+            <div class="formList">
+                    <div class="leftDetails">Customer Name</div>
+                    <div class="rightDetails" ng-model="custnameRead">{{custnameRead}}</div>
+               </div>
+                <div class="formList">
+                    <div class="leftDetails">Quantity</div>
+                    <div class="rightDetails" ng-model="quantityRead">{{quantityRead}}</div>
+                </div>
+                <div class="formList">
+                    <div class="leftDetails">Price</div>
+                    <div class="rightDetails" ng-model="priceRead">{{priceRead}}</div>
+               </div>
+                 <div class="formList">
+                    <div class="leftDetails">Date</div>
+                    <div class="rightDetails" ng-model="dateRead">{{dateRead}}</div>
+               </div>
+            </div>
+                <div class="LogoutDiv ">
+                <button ng-click="Detailsback()" class="DetailsSubmit DetailsBack">Back</button>
+            </div>
+        </div>
+
+    </div>
+</div>
